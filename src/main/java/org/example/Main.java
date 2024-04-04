@@ -2,9 +2,9 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        Animal kangur = Animal.builder().setName("kangur").setNumberOfLegs(2).build();
-        System.out.println(kangur.name());
-        Animal los = kangur.toBuilder().setName("Łoś").build();
-        System.out.println(los.name());
+        Animal jezyk = Animal.builder().setName("Jeżyk").setNumberOfLegs(4).build();
+        System.out.printf("Zwierze: %s, ilość nóg: %s\n",jezyk.name(),jezyk.numberOfLegs());
+        Animal los = jezyk.toBuilder().setName("Łoś").build();
+        System.out.printf("Zwierze: %s, ilość nóg: %s\n",los.name(),los.numberOfLegs());
     }
 }
