@@ -9,6 +9,8 @@ abstract class Animal {
         return new AutoValue_Animal.Builder();
     }
 
+    public abstract Builder toBuilder();
+
     @AutoValue.Builder
     abstract static class Builder {
         abstract Builder setName(String value);
